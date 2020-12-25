@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <h1 id="title">Rafin's Company Survey Form</h1>
+        <p id="description">
+            Thank you for taking the time to help us improve the platform
+        </p>
+    </header>
+    <section>
+
+        <form action="" id="survey-form">
+            <label for="name" id="name-label" class="labels">Name</label>
+            <input type="text" class="inputs" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label"class="labels">Email</label>
+            <input type="email"class="inputs" name="email" id="email" placeholder="Enter your email" required>
+
+            <label for="number" id="number-label"class="labels">Age</label>
+            <input type="number"class="inputs" name="number" id="number" placeholder="Enter your age" min="10" max="100">
+
+            <label for="role"class="labels">Select your current role</label>
+            <select name="role" id="dropdown"class="inputs" placeholder="Select your role">
+                <option value="" ></option>
+                <option value="student">Student</option>
+                <option value="full-time job">Full-Time Job</option>
+                <option value="full-time-learner">Full-Time-Learner</option>
+            </select>
+            <br>
+            <br>
+
+            <p>Would you recommend your friend to join this company</p>
+            <input type="radio" name="recommend" id="rad1">
+            <label for="rad1"class="labels2"> Yeap </label> <br/>
+            <input type="radio" name="recommend" id="rad2">
+            <label for="rad2"class="labels2"> No </label>
+            <br>
+            <br>
+            <p>
+                What would you like to see improved? (Check all that apply)
+            </p>
+            <input type="checkbox" name="op1" id="op1" value="rafins-mind">
+            <label for="op1"class="labels2">Rafin's Mind</label> <br>
+            <input type="checkbox" name="op2" id="op2" value="this-website">
+            <label for="op2"class="labels2">This Website</label>
+            <br>
+            <br>
+            <label for="txt" class="labels">Any Idea or suggestions?</label>
+            <textarea id="txt" placeholder="Enter your comment here" rows="7">
+            </textarea>
+
+            <button id="submit">Submit</button>
+
+        </form>
+
+    </section>
+</body>
+
+</html>
